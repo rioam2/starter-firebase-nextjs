@@ -14,7 +14,9 @@
         "dev": "yarn dev:client & yarn dev:server",
         "preview": "yarn build && cross-env NODE_ENV=production yarn firebase serve --only functions,hosting --port=3000",
         "predeploy": "rimraf dist/ && yarn build",
-        "deploy": "yarn firebase deploy --only functions,hosting"
+        "deploy": "yarn firebase deploy --only functions,hosting",
+        "deploy:ci": "yarn deploy --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT",
+        "test": "echo No tests configured..."
     },
     "engines": {
         "node": "10"

@@ -10,3 +10,9 @@ yarn dev         # start live dev server
 yarn preview     # production preview
 yarn deploy      # publish to firebase
 ```
+
+## Travis Automatic Deployment
+1. Authroize TravisCI and enable on repository (if applicable).
+2. Add environment variables for:
+   1. $FIREBASE_TOKEN using `yarn firebase login:ci`
+   2. $FIREBASE_PROJECT using your project id
