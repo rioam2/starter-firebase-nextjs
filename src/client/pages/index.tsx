@@ -1,8 +1,3 @@
-import React from 'react';
-import App from '../components/App';
-
-export default () => (
-    <App>
-        <p>Next.js Index Page</p>
-    </App>
-);
+export default function Main() {
+    return <div>I'm the app!</div>;
+}
