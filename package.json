@@ -6,7 +6,7 @@
     "license": "MIT",
     "scripts": {
         "setup": "yarn firebase login && yarn firebase use --add",
-        "build:client": "next build src/client",
+        "build:client": "next dev build src/client",
         "build:server": "babel src/server --out-dir dist/server --source-maps",
         "build": "yarn build:client && yarn build:server",
         "dev:client": "next src/client",
