@@ -24,7 +24,9 @@ export default class DocumentConfiguration extends Document {
      */
     static getInitialProps({ renderPage }: any) {
         const sheet = new ServerStyleSheet();
-        const page = renderPage((App: any) => (props: any) => sheet.collectStyles(<App {...props} />));
+        const page = renderPage((App: any) => (props: any) =>
+            sheet.collectStyles(<App {...props} />)
+        );
         const styleTags = sheet.getStyleElement();
         return { ...page, styleTags };
     }
@@ -34,7 +36,8 @@ export default class DocumentConfiguration extends Document {
             <html>
                 <Head>
                     {Object.entries(NEXT_SEO).map(
-                        ([name, content]) => content && <meta name={name} content={content} key={name} />
+                        ([name, content]) =>
+                            content && <meta name={name} content={content} key={name} />
                     )}
                     {/* Insert Styled Components Tag(s) */}
                     {(this.props as any).styleTags}

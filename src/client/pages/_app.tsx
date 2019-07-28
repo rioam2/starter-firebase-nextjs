@@ -1,19 +1,15 @@
-import App, { Container, NextAppContext, DefaultAppIProps } from 'next/app';
-import { GetInitialProps } from 'next';
+import App, { Container, AppInitialProps } from 'next/app';
+import { AppView } from '../views/AppView';
+import '../index.css';
 
-type GetInitialAppProps = GetInitialProps<any, NextAppContext>;
-
-export default class Application extends App<DefaultAppIProps> {
-    static getInitialProps: GetInitialAppProps = async ({ Component, ctx }) => {
-        const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-        return { pageProps };
-    };
-
+export default class Application extends App<AppInitialProps> {
     render() {
         const { Component, pageProps } = this.props;
         return (
             <Container>
-                <Component {...pageProps} />
+                <AppView>
+                    <Component {...pageProps} />
+                </AppView>
             </Container>
         );
     }

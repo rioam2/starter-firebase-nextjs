@@ -1,3 +1,7 @@
-export default function Main() {
-    return <div>I'm the app!</div>;
-}
+import { NextComponentType } from 'next-server/dist/lib/utils';
+
+const Index: NextComponentType = () => {
+    return <p>Home page (src/client/pages/index.tsx)</p>;
+};
+
+export default Index;
