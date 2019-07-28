@@ -1,0 +1,32 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+  
+    // Users have access to their own scope
+    match /users/{pathUID} {
+      allow read, write: if pathUID == request.auth.uid;
+    	match /{nested=**} {
+        allow read, write: if pathUID == request.auth.uid;      
+      }
+    }
+    
+    // Default behavior: check permissions map on document
+    match /{defaultSchema=**} {
+      function userCan(perm) { 
+        return resource != null &&
+               exists(resource["__name__"]) &&
+               ('permissions') in resource.data && 
+               resource.data.permissions is map &&
+               (request.auth.uid) in resource.data.permissions && 
+               resource.data.permissions[request.auth.uid] is map &&
+               (perm) in resource.data.permissions[request.auth.uid] && 
+               resource.data.permissions[request.auth.uid][perm] is bool &&
+               resource.data.permissions[request.auth.uid][perm]; 
+      }
+      allow get: if userCan('get');
+      allow list: if userCan('list');
+      allow create: if userCan('create');
+      allow update: if userCan('update');
+      allow delete: if userCan('delete');
+    }
+  }
+}
