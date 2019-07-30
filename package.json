@@ -43,7 +43,7 @@
         "@types/styled-components": "^4.1.18",
         "cross-env": "^5.2.0",
         "firebase-functions-test": "^0.1.6",
-        "firebase-tools": "7.0.0",
+        "firebase-tools": "7.2.1",
         "rimraf": "^2.6.3",
         "typescript": "^3.5.3"
     }
