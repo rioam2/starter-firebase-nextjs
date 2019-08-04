@@ -8056,10 +8056,10 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
-usefire@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/usefire/-/usefire-1.1.4.tgz#5fb4db0cde7b73bd8c674a24381ba309d8739ac6"
-  integrity sha512-J9+CFxmloO6nCbDM54Zf/oP3C83R623GLd7L/hMBA3arxtgLo+kO9FnRBlWzwSFMHw75M6CYgFPpd6AzTQH2Cg==
+usefire@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/usefire/-/usefire-1.1.5.tgz#ebb575bf6b2b0dcdd6c31213b4b7a3c45d317f1a"
+  integrity sha512-i7rWtYjYtaLTrYE2cQkfLCuCa3C08OIZgLJK79lU1qM6JWdcaUwB9tEKOc7JU4qzspZD130YJ7XYTkrD+AkCBg==
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
