@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 
-const projectId = 'nextjs-on-firebase-ts';
-const apiKey = 'AIzaSyCsiDksZmYnliMhMVlaZc0AMi-k0JIixSk';
+const projectId = process.env.STATIC_FIREBASE_PROJECT;
+const apiKey = process.env.STATIC_FIREBASE_WEB_KEY;
 
 const app =
     firebase.apps[0] ||
