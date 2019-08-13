@@ -7,18 +7,18 @@ Forked from [@jthegedus/firebase-gcp-examples](https://github.com/jthegedus/fire
 To use this template, click ["Use Template"](https://github.com/rioam2/starter-firebase-nextjs/generate) at the top of the page. This will guide you through generating a new repository with this as a base. Next, head over to [Firebase](https://console.firebase.google.com) and create a new project to host your site. Take note of the project id. Finally, clone your newly generated repository and run these commands (as applicable) from the project root:
 
 ```shell
-yarn install     # install dependencies
-# Add environment variables listed below
-# yarn setup       # initialize & link firebase
+yarn setup       # setup environment variables
 yarn dev         # start live dev server
 yarn preview     # production preview
 yarn deploy      # publish to firebase
 ```
 
 # Environment Variables to Setup:
+
+Environment variables can be added manually by creating a `.env` file by hand or by running `yarn setup`.
+
 ```js
 // .env
-
 DOTENV_FIREBASE_PROJECT=... // from firebase console
 DOTENV_FIREBASE_WEB_KEY=... // from firebase console
 DOTENV_FIREBASE_TOKEN=...   // from yarn firebase login:ci

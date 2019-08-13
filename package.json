@@ -5,6 +5,7 @@
     "main": "dist/server/index.js",
     "license": "MIT",
     "scripts": {
+        "setup": "./scripts/setup.sh",
         "dotenv": "node ./util/dotenv_loader.js",
         "build:client": "next build src/client",
         "build:server": "babel src/server --out-dir dist/server --source-maps",
