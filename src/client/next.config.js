@@ -4,7 +4,7 @@ const dotenvLoad = require('dotenv-load');
 
 dotenvLoad();
 const withNextEnv = nextEnv({
-    staticPrefix: 'STATIC_',
+    staticPrefix: 'DOTENV_',
     publicPrefix: 'PUBLIC_'
 });
 

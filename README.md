@@ -8,10 +8,20 @@ To use this template, click ["Use Template"](https://github.com/rioam2/starter-f
 
 ```shell
 yarn install     # install dependencies
-yarn setup       # initialize & link firebase
+# Add environment variables listed below
+# yarn setup       # initialize & link firebase
 yarn dev         # start live dev server
 yarn preview     # production preview
 yarn deploy      # publish to firebase
+```
+
+# Environment Variables to Setup:
+```js
+// .env
+
+DOTENV_FIREBASE_PROJECT=... // from firebase console
+DOTENV_FIREBASE_WEB_KEY=... // from firebase console
+DOTENV_FIREBASE_TOKEN=...   // from yarn firebase login:ci
 ```
 
 ## Travis Continuous Deployment
@@ -20,5 +30,5 @@ Automatically deploy passing builds to your firebase project!
 
 1. Authorize TravisCI and enable on repository (if applicable).
 2. Add environment variables for:
-   1. $FIREBASE_TOKEN using `yarn firebase login:ci`
-   2. $FIREBASE_PROJECT using your project id
+   1. $DOTENV_FIREBASE_TOKEN using `yarn firebase login:ci`
+   2. $DOTENV_FIREBASE_PROJECT using your project id
