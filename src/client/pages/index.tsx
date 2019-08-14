@@ -1,7 +1,9 @@
-import { NextComponentType } from 'next';
+import { User } from '../components/User';
+import { useFireauth } from '../firebase/hooks';
 
-const Index: NextComponentType = () => {
-    return <p>Home page (src/client/pages/index.tsx)</p>;
+const Index: React.FunctionComponent = () => {
+    const { user, login, logout } = useFireauth();
+    return <User user={user} login={login.withGoogle} logout={logout} />;
 };
 
 export default Index;
