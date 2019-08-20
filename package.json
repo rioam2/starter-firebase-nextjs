@@ -47,7 +47,7 @@
         "cross-env": "^5.2.0",
         "dotenv": "^8.0.0",
         "firebase-functions-test": "^0.1.6",
-        "firebase-tools": "7.0.0",
+        "firebase-tools": "7.2.4",
         "rimraf": "^2.6.3",
         "typescript": "^3.5.3"
     }
