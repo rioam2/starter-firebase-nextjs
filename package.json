@@ -6,17 +6,20 @@
     "license": "MIT",
     "scripts": {
         "setup": "./scripts/setup.sh",
-        "dotenv": "node ./util/dotenv_loader.js",
+        "dotenv": "/usr/bin/env node ./util/dotenv_loader.js",
         "build:client": "next build src/client",
         "build:server": "babel src/server --out-dir dist/server --source-maps",
-        "build": "rimraf dist/ && yarn build:client && yarn build:server",
+        "build:clean": "rimraf dist/ && yarn build",
+        "build": "yarn build:client && yarn build:server",
         "dev:client": "next dev src/client",
         "dev:server": "babel src/server --out-dir dist/server --source-maps --watch",
         "dev": "yarn dev:client & yarn dev:server",
-        "preview": "yarn build && ./scripts/preview.sh",
-        "deploy": "yarn build && ./scripts/deploy.sh",
-        "pretest": "yarn build",
-        "test": "echo No tests configured..."
+        "preview": "yarn build:clean && ./scripts/preview.sh",
+        "deploy": "yarn build:clean && ./scripts/deploy.sh",
+        "pretest": "yarn build:clean",
+        "test": "echo No tests configured...",
+        "travis:script": "yarn test",
+        "travis:after_success": "./scripts/deploy.sh"
     },
     "engines": {
         "node": "8"
