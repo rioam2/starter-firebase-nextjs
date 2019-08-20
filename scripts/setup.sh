@@ -5,6 +5,7 @@ cd ..
 
 yarn install
 
+touch .env
 grep 'DOTENV_FIREBASE_PROJECT' .env &>/dev/null
 if [ $? -eq 0 ]; then read -p "Replace existing Project ID? [Y/n]: " CONF; fi
 if [[ $CONF != 'n' ]]; then
