@@ -17,9 +17,7 @@
         "preview": "yarn build:clean && ./scripts/preview.sh",
         "deploy": "yarn build:clean && ./scripts/deploy.sh",
         "pretest": "yarn build:clean",
-        "test": "echo No tests configured...",
-        "travis:script": "yarn test",
-        "travis:after_success": "./scripts/deploy.sh"
+        "test": "echo No tests configured..."
     },
     "engines": {
         "node": "8"

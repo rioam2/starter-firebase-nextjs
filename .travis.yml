@@ -2,16 +2,5 @@ sudo: false
 language: node_js
 node_js:
     - 8.13.0
-branches:
-    only:
-        - master
 script:
-    - |
-        if [[ $TRAVIS_SECURE_ENV_VARS  == 'true' ]]; then
-            yarn travis:script
-        fi
-after_success:
-    - |
-        if [[ $TRAVIS_SECURE_ENV_VARS  == 'true' ]] && [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then
-            yarn travis:after_success
-        fi
+    - ./scripts/travis/test.sh
