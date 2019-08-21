@@ -11,3 +11,7 @@ const command = process.argv
 const child = exec(command, { env: mergedEnv });
 child.stdout.pipe(process.stdout);
 child.stderr.pipe(process.stderr);
+
+child.addListener('exit', (code) => {
+    process.exitCode = code;
+});
