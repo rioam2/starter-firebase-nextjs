@@ -50,6 +50,6 @@
         "firebase-functions-test": "^0.1.6",
         "firebase-tools": "7.0.0",
         "rimraf": "^2.6.3",
-        "typescript": "^3.5.3"
+        "typescript": "^3.6.2"
     }
 }
