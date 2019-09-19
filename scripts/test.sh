@@ -4,10 +4,8 @@ set -e
 
 if [[ $TRAVIS_SECURE_ENV_VARS  == 'true' ]]; then
     yarn test
-    deploy()
-fi
-
-function deploy() {
+    
+    # Continuous Deployment for staging/production
     if [[ $TRAVIS_BRANCH == 'master' ]]; then
         if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then
             # If tests passed on master and not a PR, deploy to production
@@ -19,4 +17,4 @@ function deploy() {
             wget "https://$STATIC_STAGE_PROJECT.web.app" -O /dev/null
         fi
     fi
-}
+fi
