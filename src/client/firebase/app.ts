@@ -1,7 +1,9 @@
 import firebase from 'firebase/app';
+import getConfig from 'next/config';
 
-const projectId = process.env.DOTENV_FIREBASE_PROJECT;
-const apiKey = process.env.DOTENV_FIREBASE_WEB_KEY;
+const { publicRuntimeConfig } = getConfig();
+const apiKey = publicRuntimeConfig.firebaseWebappKey;
+const projectId = publicRuntimeConfig.firebaseProject;
 
 const app =
     firebase.apps[0] ||
