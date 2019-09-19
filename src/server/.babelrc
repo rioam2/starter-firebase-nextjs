@@ -1,3 +1,4 @@
 {
-    "presets": [["@babel/preset-env", { "targets": { "node": "8.13.0" } }]]
+    "presets": [["@babel/preset-env", { "targets": { "node": "8.13.0" } }]],
+    "plugins": ["transform-node-env-inline"]
 }

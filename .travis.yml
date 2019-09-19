@@ -3,4 +3,4 @@ language: node_js
 node_js:
     - 8.13.0
 script:
-    - ./scripts/travis/test.sh
+    - ./scripts/test.sh
