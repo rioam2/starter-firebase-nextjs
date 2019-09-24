@@ -38,7 +38,7 @@
         "next-env": "^1.1.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
-        "styled-components": "^4.3.2",
+        "styled-components": "^4.4.0",
         "usefire": "^1.1.6"
     },
     "devDependencies": {
