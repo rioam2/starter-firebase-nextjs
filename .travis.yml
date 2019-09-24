@@ -1,5 +1,14 @@
 sudo: false
 language: node_js
+addons:
+    apt:
+        packages:
+            - libgconf-2-4
+cache:
+    yarn: true
+    directories:
+        - node_modules
+        - ~/.cache
 node_js:
     - 8.13.0
 script:
