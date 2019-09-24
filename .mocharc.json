@@ -1,0 +1,7 @@
+{
+    "slow": 0,
+    "recursive": true,
+    "extension": ["ts"],
+    "require": "ts-node/register",
+    "watch-extensions": ["ts"]
+}

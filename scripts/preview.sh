@@ -15,4 +15,5 @@ yarn build:clean
 yarn firebase serve \
     --only functions,hosting \
     --port=3000 \
-    --project $PROJECT
+    --project $PROJECT \
+    --token $STATIC_DEPLOY_KEY
