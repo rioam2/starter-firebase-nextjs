@@ -58,7 +58,7 @@
         "cypress": "^3.4.1",
         "dotenv": "^8.1.0",
         "firebase-functions-test": "^0.1.6",
-        "firebase-tools": "7.3.2",
+        "firebase-tools": "7.4.0",
         "gitconfiglocal": "^2.1.0",
         "inquirer": "^7.0.0",
         "mocha": "^6.2.0",
