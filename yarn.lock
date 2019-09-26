@@ -2557,26 +2557,7 @@ check-more-types@2.24.0:
   resolved "https://registry.yarnpkg.com/check-more-types/-/check-more-types-2.24.0.tgz#1420ffb10fd444dcfc79b43891bbfffd32a84600"
   integrity sha1-FCD/sQ/URNz8ebQ4kbv//TKoRgA=
 
-chokidar@^2.0.2, chokidar@^2.0.4:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.6.tgz#b6cad653a929e244ce8a834244164d241fa954c5"
-  integrity sha512-V2jUo67OKkc6ySiRpJrjlpJKl9kDuG+Xb8VgsGzb+aEouhgS1D0weyPU4lEzdAcsCAvrih2J2BqyXqHWvVLw5g==
-  dependencies:
-    anymatch "^2.0.0"
-    async-each "^1.0.1"
-    braces "^2.3.2"
-    glob-parent "^3.1.0"
-    inherits "^2.0.3"
-    is-binary-path "^1.0.0"
-    is-glob "^4.0.0"
-    normalize-path "^3.0.0"
-    path-is-absolute "^1.0.0"
-    readdirp "^2.2.1"
-    upath "^1.1.1"
-  optionalDependencies:
-    fsevents "^1.2.7"
-
-chokidar@^2.1.8:
+chokidar@^2.0.2, chokidar@^2.0.4, chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
   integrity sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
@@ -4240,10 +4221,10 @@ firebase-functions@3.0.0:
     jsonwebtoken "^8.3.2"
     lodash "^4.6.1"
 
-firebase-tools@7.3.2:
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-7.3.2.tgz#c7627af95ae42662e5b84bd07043e312647e6168"
-  integrity sha512-YCM51Cfxty0gB3soqhmA3v5ZscpWRSFX3G/cE46erXseUYg8k2is7JDljW9CelP7qYyACaTA9H36OSu89zVvEw==
+firebase-tools@7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-7.4.0.tgz#049ef11a4cae620b500e34fab3ffb9eb179fbcff"
+  integrity sha512-F3FCgSopTdxFQVNsGy4qmkDXuhJbK9LIuXL7PK1Q/3dwYzUX1w2AIOjIoWJz/vTnMpFYvDZvmfaS9Hz1LmHA6w==
   dependencies:
     JSONStream "^1.2.1"
     archiver "^3.0.0"
