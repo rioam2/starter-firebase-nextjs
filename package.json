@@ -61,7 +61,7 @@
         "firebase-tools": "7.4.0",
         "gitconfiglocal": "^2.1.0",
         "inquirer": "^7.0.0",
-        "mocha": "^6.2.0",
+        "mocha": "^6.2.1",
         "rimraf": "^3.0.0",
         "start-server-and-test": "^1.10.2",
         "travis-encrypt": "^2.1.1",
