@@ -32,3 +32,13 @@ For CI/CD with TravisCI, you will need to do the following:
 
 1. Authorize TravisCI and enable on repository (if applicable).
 2. Add environment variables in your repository settings on TravisCI for the each of the variables in your `.env` file.
+
+# Syncing upstream changes from this template
+
+If you would like to keep your template instance up-to-date with this source repository, you can do the following to select and apply updates:
+
+```shell
+yarn update
+```
+
+This will allow you to apply all necessary, tested, non-breaking patches and changes. 
