@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
 describe('Trivial Test', () => {
-    it('Passes', () => {
-        expect(true).to.equal(true);
-    });
+	it('Passes', () => {
+		expect(true).to.equal(true);
+	});
 });

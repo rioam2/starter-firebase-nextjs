@@ -18,14 +18,14 @@ const { exec } = require('child_process');
 
 const mergedEnv = { ...dotenv.parsed, ...process.env };
 const command = process.argv
-    .slice(2)
-    .join(' ')
-    .replace(/\%\S+/g, (match) => `"${mergedEnv[match.slice(1)] || ''}"`);
+	.slice(2)
+	.join(' ')
+	.replace(/\%\S+/g, (match) => `"${mergedEnv[match.slice(1)] || ''}"`);
 
 const child = exec(command, { env: mergedEnv });
 child.stdout.pipe(process.stdout);
 child.stderr.pipe(process.stderr);
 
 child.addListener('exit', (code) => {
-    process.exitCode = code;
+	process.exitCode = code;
 });

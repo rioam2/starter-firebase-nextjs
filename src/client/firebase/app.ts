@@ -6,12 +6,12 @@ const apiKey = publicRuntimeConfig.firebaseWebappKey;
 const projectId = publicRuntimeConfig.firebaseProject;
 
 const app =
-    firebase.apps[0] ||
-    firebase.initializeApp({
-        apiKey,
-        authDomain: `${projectId}.firebaseapp.com`,
-        databaseURL: `https://${projectId}.firebaseio.com`,
-        projectId
-    });
+	firebase.apps[0] ||
+	firebase.initializeApp({
+		apiKey,
+		authDomain: `${projectId}.firebaseapp.com`,
+		databaseURL: `https://${projectId}.firebaseio.com`,
+		projectId
+	});
 
 export default app;
