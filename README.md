@@ -41,4 +41,4 @@ If you would like to keep your template instance up-to-date with this source rep
 yarn update
 ```
 
-This will allow you to apply all necessary, tested, non-breaking patches and changes. 
+This will allow you to apply all necessary, tested, non-breaking patches and changes.

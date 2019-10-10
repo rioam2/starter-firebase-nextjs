@@ -1,5 +1,0 @@
-{
-    "hooks": {
-        "pre-commit": "sort-package-json && git add package.json"
-    }
-}
