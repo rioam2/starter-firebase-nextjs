@@ -19,6 +19,7 @@ const { exec } = require('child_process');
 const mergedEnv = { ...dotenv.parsed, ...process.env };
 const command = process.argv
 	.slice(2)
+	.map((arg) => (arg.includes(' ') && `'${arg}'`) || arg)
 	.join(' ')
 	.replace(/\%\S+/g, (match) => `"${mergedEnv[match.slice(1)] || ''}"`);
 
