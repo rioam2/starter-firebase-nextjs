@@ -19,7 +19,7 @@
 		"preview:staging": "cross-env NODE_ENV=production yarn loadenv ./scripts/preview.sh",
 		"setup": "./scripts/setup.js",
 		"test": "yarn test:unit && yarn test:cypress",
-		"test:cypress": "start-server-and-test 'yarn preview:staging > /dev/null' 3000 'cypress run'",
+		"test:cypress": "yarn loadenv yarn start-server-and-test '[ -z %STATIC_STAGE_PROJECT ] && yarn preview:production > /dev/null || yarn preview:staging > /dev/null' 3000 'cypress run'",
 		"test:cypress:watch": "start-server-and-test 'yarn dev > /dev/null' 3000 'cypress open'",
 		"test:unit": "mocha ./**/*.unit.test.ts",
 		"test:unit:watch": "yarn test:unit --watch",
