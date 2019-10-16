@@ -66,7 +66,7 @@
 		"pretty-quick": "^1.11.1",
 		"rimraf": "^3.0.0",
 		"sort-package-json": "^1.22.1",
-		"start-server-and-test": "^1.10.5",
+		"start-server-and-test": "^1.10.6",
 		"travis-encrypt": "^2.1.1",
 		"ts-node": "^8.4.1",
 		"typescript": "^3.6.4"
