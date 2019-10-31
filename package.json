@@ -29,7 +29,7 @@
 		"@zeit/next-css": "^1.0.1",
 		"@zeit/next-typescript": "^1.1.1",
 		"dotenv-load": "^2.0.0",
-		"firebase": "^7.2.2",
+		"firebase": "^7.2.3",
 		"firebase-admin": "^8.6.1",
 		"firebase-functions": "3.3.0",
 		"next": "^9.1.2",
