@@ -47,7 +47,7 @@
 		"@types/chai": "^4.2.4",
 		"@types/dotenv": "^8.2.0",
 		"@types/mocha": "^5.2.7",
-		"@types/next": "^8.0.6",
+		"@types/next": "^9.0.0",
 		"@types/react": "^16.9.11",
 		"@types/styled-components": "^4.1.22",
 		"babel-plugin-transform-node-env-inline": "^0.4.3",
