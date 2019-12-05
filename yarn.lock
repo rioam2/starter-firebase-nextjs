@@ -33,18 +33,17 @@
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-script-csp/-/toolbox-script-csp-1.1.1.tgz#0b049a1c86c99f300162a10e1b9ce83c6e354a45"
   integrity sha512-gACGfsVKinCy/977FSrlVgo6jxTZ0lcTCvCnRlNwvSOcxJVm+jJR3sP7/F43fpak9Gsq/EwFaatfnNMbunPc+w==
 
-"@babel/cli@^7.6.4":
-  version "7.6.4"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.6.4.tgz#9b35a4e15fa7d8f487418aaa8229c8b0bc815f20"
-  integrity sha512-tqrDyvPryBM6xjIyKKUwr3s8CzmmYidwgdswd7Uc/Cv0ogZcuS1TYQTLx/eWKP3UbJ6JxZAiYlBZabXm/rtRsQ==
+"@babel/cli@^7.7.4":
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.7.4.tgz#38804334c8db40209f88c69a5c90998e60cca18b"
+  integrity sha512-O7mmzaWdm+VabWQmxuM8hqNrWGGihN83KfhPUzp2lAW4kzIMwBxujXkZbD4fMwKMYY9FXTbDvXsJqU+5XHXi4A==
   dependencies:
-    commander "^2.8.1"
+    commander "^4.0.1"
     convert-source-map "^1.1.0"
     fs-readdir-recursive "^1.1.0"
     glob "^7.0.0"
     lodash "^4.17.13"
-    mkdirp "^0.5.1"
-    output-file-sync "^2.0.0"
+    make-dir "^2.1.0"
     slash "^2.0.0"
     source-map "^0.5.0"
   optionalDependencies:
@@ -2932,7 +2931,7 @@ commander@2.9.0:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@^2.19.0, commander@^2.20.0, commander@^2.8.1:
+commander@^2.19.0, commander@^2.20.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
@@ -5769,7 +5768,7 @@ is-path-inside@^1.0.0:
   dependencies:
     path-is-inside "^1.0.1"
 
-is-plain-obj@^1.0.0, is-plain-obj@^1.1.0:
+is-plain-obj@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
   integrity sha1-caUMhCnfync8kqOQpKA7OfzVHT4=
@@ -6641,7 +6640,7 @@ make-dir@^1.0.0:
   dependencies:
     pify "^3.0.0"
 
-make-dir@^2.0.0:
+make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
   integrity sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==
@@ -7546,15 +7545,6 @@ osenv@^0.1.0, osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
-
-output-file-sync@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/output-file-sync/-/output-file-sync-2.0.1.tgz#f53118282f5f553c2799541792b723a4c71430c0"
-  integrity sha512-mDho4qm7WgIXIGf4eYU1RHN2UU5tPfVYVSRwDJw0uTmj35DQUt/eNp19N7v6T3SrR0ESTEf2up2CGO73qI35zQ==
-  dependencies:
-    graceful-fs "^4.1.11"
-    is-plain-obj "^1.1.0"
-    mkdirp "^0.5.1"
 
 p-defer@^3.0.0:
   version "3.0.0"
