@@ -34,7 +34,7 @@
 		"firebase-functions": "3.3.0",
 		"next": "^9.1.4",
 		"next-env": "^1.1.0",
-		"react": "^16.11.0",
+		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
 		"styled-components": "^4.4.1",
 		"usefire": "^1.1.6"
