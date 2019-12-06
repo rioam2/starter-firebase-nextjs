@@ -42,7 +42,7 @@
 	"devDependencies": {
 		"@babel/cli": "^7.7.4",
 		"@babel/core": "^7.7.4",
-		"@babel/preset-env": "^7.7.4",
+		"@babel/preset-env": "^7.7.5",
 		"@firebase/app-types": "^0.4.8",
 		"@types/chai": "^4.2.6",
 		"@types/dotenv": "^8.2.0",
