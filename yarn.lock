@@ -1078,10 +1078,15 @@
     "@firebase/util" "0.2.34"
     tslib "1.10.0"
 
-"@firebase/app-types@0.4.8", "@firebase/app-types@^0.4.8":
+"@firebase/app-types@0.4.8":
   version "0.4.8"
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.4.8.tgz#be69cbf3a7550c900d7af943adb2a3d1dcce6631"
   integrity sha512-VTjWRooelMExK/rKArp6WqnWJJfi8Vs6VuDYDSeMcQ3NpSux2bW1dfJFuzYmiK1+37hEJP1F43DyUDv2lCJquw==
+
+"@firebase/app-types@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.5.0.tgz#b9b51a37956ec166debc8784a2fb30b5ffc9e921"
+  integrity sha512-8j+vCXTpAkYGcFk86mPZ90V6HMFmn196RIEW9Opi0PN+VrPFC1l/eW0gptM8v7VXaQhECOxws3TN2g+dDaeSYA==
 
 "@firebase/app@0.4.25":
   version "0.4.25"
