@@ -44,7 +44,7 @@
 		"@babel/core": "^7.7.4",
 		"@babel/preset-env": "^7.7.6",
 		"@firebase/app-types": "^0.5.0",
-		"@types/chai": "^4.2.6",
+		"@types/chai": "^4.2.7",
 		"@types/dotenv": "^8.2.0",
 		"@types/mocha": "^5.2.7",
 		"@types/next": "^9.0.0",
