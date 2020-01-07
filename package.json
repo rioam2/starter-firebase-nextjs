@@ -60,7 +60,7 @@
 		"git-upstream-template": "1.0.6",
 		"gitconfiglocal": "^2.1.0",
 		"husky": "^3.1.0",
-		"inquirer": "^7.0.1",
+		"inquirer": "^7.0.3",
 		"mocha": "^6.2.2",
 		"prettier": "^1.19.1",
 		"pretty-quick": "^2.0.1",
