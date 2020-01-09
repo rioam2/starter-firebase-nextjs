@@ -65,7 +65,7 @@
 		"prettier": "^1.19.1",
 		"pretty-quick": "^2.0.1",
 		"rimraf": "^3.0.0",
-		"sort-package-json": "^1.38.0",
+		"sort-package-json": "^1.38.2",
 		"start-server-and-test": "^1.10.6",
 		"travis-encrypt": "^2.1.1",
 		"ts-node": "^8.5.4",
