@@ -69,7 +69,7 @@
 		"start-server-and-test": "^1.10.6",
 		"travis-encrypt": "^2.1.1",
 		"ts-node": "^8.6.2",
-		"typescript": "^3.7.4"
+		"typescript": "^3.7.5"
 	},
 	"engines": {
 		"node": "8"
