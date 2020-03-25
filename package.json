@@ -55,7 +55,7 @@
 		"cross-env": "^6.0.3",
 		"cypress": "^4.2.0",
 		"dotenv": "^8.2.0",
-		"firebase-functions-test": "^0.1.7",
+		"firebase-functions-test": "^0.2.0",
 		"firebase-tools": "7.15.0",
 		"git-upstream-template": "1.0.6",
 		"gitconfiglocal": "^2.1.0",
